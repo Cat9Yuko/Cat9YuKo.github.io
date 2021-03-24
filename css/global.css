@@ -1,0 +1,45 @@
+body {
+    cursor: url(../img/cur/normal.cur),default;
+}
+.slick-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/img/dot.gif);
+    background-attachment: fixed;
+    z-index: 3;
+}
+
+.slick-mod {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* overflow: hidden; */
+}
+.slick-item {
+    width: 100%;
+    height: 100vh;
+}
+.slick-item div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* .slick-item img {
+    max-width: 100%;
+} */
+/* .center-block-1200 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 2000px;
+    background-color: antiquewhite;
+} */

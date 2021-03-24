@@ -2,77 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>导航栏</title>
-    <style type="text/css">
-    body{
-      width:100%;
-      height:600px;
-      background-image:url(img/bg-1.jpg);
-      background-position:center center;
-      background-repeat:no-repeat;
-      background-size:100% 500px;
-      margin:0px;
-      padding:0px;
-        }
-        .nav-m{
-          position:absolute;
-          text-align:center;
-          width:100%;
-
-        }
-        .nav-m ul{
-          display:inline-block;
-        }
-      .nav-m li{
-        background-color:rgba(94, 145, 166, 0.55);
-        float:left;
-        list-style:none;
-        width:120px;
-        margin:1px;
-        border-radius:5px;
-        font-size:24px;
-        line-height:30px;
-
-      }
-      a{
-        text-decoration:none;
-      }
-      li:hover{
-					animation-name: act;
-					animation-duration: 900ms;
-					animation-timing-function: linear;
-					animation-iteration-count: infinite;
-				}
-				@keyframes act{
-
-				0%{
-					transform: scale(1);
-					background-color:rgba(94, 145, 166, 0.55);
-				}
-
-				60%{
-					transform: scale(1.1);
-					background-color:rgba(94, 145, 166, 1)
-				}
-
-				100%{
-					transform: scale(1);
-					background-color:rgba(94, 145, 166, 0.55)
-				}
-    </style>
+    <title>猫怨九条命的博客</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/global.css">
   </head>
   <body>
-    <nav class="nav-m">
-      <ul>
-        <li><a href="#">首页</a></li>
-        <li><a href="#">动画</a></li>
-        <li><a href="#">番剧</a></li>
-        <li><a href="#">国创</a></li>
-        <li><a href="#">音乐</a></li>
-        <li><a href="#">舞蹈</a></li>
-      </ul>
-    </nav>
+    <div class="full-slick">
+      <div class="slick-mod">
+        <div class="slick-item">
+          <div style="background-image: url(img/wallhaven-dp59jo.jpg);"></div>
+        </div>
+        <div class="slick-item">
+          <div style="background-image: url(img/wallhaven-dpgw2j.jpg);"></div>
+        </div>
+      </div>
+    </div>
 
-
+    
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slick-mod").slick({
+          dots: false,
+          autoPlay: true,
+          fade: true
+        })
+      });
+    </script>
   </body>
 </html>
